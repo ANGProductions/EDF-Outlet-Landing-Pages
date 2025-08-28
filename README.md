@@ -1,74 +1,75 @@
 # EDF Outlet Landing Page
 
-A responsive landing page for EDF Outlet, built based on the Figma design specifications. This landing page showcases exclusive perks, convenient payments, and outlet locations with a modern, mobile-first approach.
+A responsive, modern landing page for EDF Outlet featuring furniture categories, BLUCard benefits, and store locations.
 
-## Features
+## 🚀 Features
 
-- **Responsive Design**: Optimized for all screen sizes with a mobile breakpoint at 513px
-- **Modern UI/UX**: Clean, professional design matching the Figma specifications exactly
-- **Interactive Elements**: Smooth scrolling, hover effects, and button interactions
-- **Product Showcase**: Displays furniture categories with pricing information
-- **Location Information**: Three outlet locations with detailed contact information
-- **Social Media Integration**: Social media icons in the footer
-- **Performance Optimized**: Efficient CSS and JavaScript implementation
+- **Responsive Design**: Mobile-first approach with breakpoints at 1024px, 768px, 513px, and 375px
+- **Hero Section**: Prominent EDF Outlet branding with call-to-action
+- **Product Categories**: Showcase of furniture categories (beds, sofas, dining sets, etc.)
+- **BLUCard Section**: Exclusive perks and benefits for BLUCard members
+- **Store Locations**: Interactive location cards with store information and directions
+- **Modern UI/UX**: Clean design with smooth animations and hover effects
 
-## Design Specifications
+## 🛠️ Technologies Used
 
-- **Colors**: Matches the Figma design palette exactly
-- **Typography**: Uses Helvetica Neue and Gotham HTF fonts
-- **Layout**: 1280px max-width desktop design with responsive breakpoints
-- **Images**: All product and location images from the Figma design
-- **Spacing**: Precise spacing and padding matching the design specifications
+- **HTML5**: Semantic markup structure
+- **CSS3**: Modern styling with Grid, Flexbox, and CSS Variables
+- **JavaScript**: Interactive functionality and smooth scrolling
+- **Responsive Images**: Optimized images for all device sizes
+- **SVG Graphics**: Scalable vector graphics for logos and icons
 
-## File Structure
+## 📱 Responsive Breakpoints
+
+- **Desktop**: 1024px+ (3-column layouts, full-width sections)
+- **Tablet**: 768px-1023px (2-column layouts, optimized spacing)
+- **Mobile**: 513px-767px (single-column, stacked layouts)
+- **Small Mobile**: 375px-512px (optimized for small screens)
+
+## 🎨 Design Features
+
+- **Color Scheme**: Professional blues and grays (#395672, #7299BB, #F7F7F7)
+- **Typography**: Helvetica Neue and Gotham HTF font families
+- **Shadows**: Subtle drop shadows for depth and modern feel
+- **Animations**: Smooth transitions and hover effects
+- **Grid System**: CSS Grid for complex layouts, Flexbox for alignment
+
+## 📁 Project Structure
 
 ```
-EDF Outlet Landing Page/
+EDF-Outlet-Landing-Pages/
 ├── index.html          # Main HTML structure
-├── styles.css          # CSS styling and responsive design
+├── styles.css          # All CSS styles and responsive rules
 ├── script.js           # JavaScript functionality
-├── images/             # Image assets from Figma
-│   ├── blucard-56586a.png
-│   ├── hero-image-56586a.png
-│   ├── beds-product-56586a.png
-│   ├── sofas-product-56586a.png
-│   ├── home-decor-product-56586a.png
-│   ├── dining-sets-product-56586a.png
-│   ├── mattresses-product-56586a.png
-│   ├── leather-seating-product-56586a.png
-│   ├── fort-myers-outlet-56586a.png
-│   ├── miller-square-outlet-56586a.png
-│   ├── airport-outlet-56586a.png
-│   ├── social-icon-1-56586a.png
-│   ├── social-icon-2-56586a.png
-│   ├── social-icon-3-56586a.png
-│   ├── social-icon-4-56586a.png
-│   ├── social-icon-5-56586a.png
-│   ├── social-icon-6-56586a.png
-│   ├── social-icon-7-56586a.png
-│   ├── social-icon-8-56586a.png
-│   ├── bedroom-hero-56586a.png
-│   └── edf-logo.svg
-└── README.md           # Project documentation
+├── README.md           # Project documentation
+└── images/             # Image assets
+    ├── edf-outlet-logo-new.png
+    ├── blucard-logo-new.png
+    ├── bedroom-hero-56586a.png
+    ├── fort-myers-outlet-new.png
+    ├── miller-square-outlet-new.png
+    ├── airport-outlet-new.png
+    ├── [product category images]
+    └── [social media icons]
 ```
 
-## Sections
+## 🚀 Getting Started
 
-1. **Hero Section**: Main headline with call-to-action buttons and BLUCard promotion
-2. **Product Categories**: Six furniture categories with pricing and images
-3. **About Section**: Company information with EDF logo
-4. **Outlet Locations**: Three store locations with contact details and directions
-5. **Footer**: Social media icons, legal links, and copyright information
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ANGProductions/EDF-Outlet-Landing-Pages.git
+   cd EDF-Outlet-Landing-Pages
+   ```
 
-## Responsive Breakpoints
+2. **Open in browser**:
+   ```bash
+   open index.html
+   ```
+   Or simply double-click the `index.html` file
 
-- **Desktop**: 1280px and above
-- **Tablet**: 1024px - 1279px
-- **Mobile Large**: 768px - 1023px
-- **Mobile**: 513px - 767px
-- **Mobile Small**: 375px - 512px
+3. **No build process required** - this is a static HTML/CSS/JS project
 
-## Browser Support
+## 📱 Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
@@ -76,40 +77,54 @@ EDF Outlet Landing Page/
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## Getting Started
+## 🎯 Key Sections
 
-1. Clone or download the project files
-2. Ensure all image files are in the `images/` directory
-3. Open `index.html` in a web browser
-4. For development, use a local server to avoid CORS issues with images
+### Hero Section
+- EDF Outlet logo and branding
+- Compelling headline and description
+- Store locator call-to-action button
+- Bedroom hero image
 
-## Customization
+### Product Categories
+- 6 furniture categories with images
+- Pricing information
+- Clean card-based layout
 
-- **Colors**: Update CSS custom properties in `styles.css`
-- **Content**: Modify text and images in `index.html`
-- **Functionality**: Add new features in `script.js`
-- **Styling**: Adjust layouts and components in `styles.css`
+### BLUCard Benefits
+- Exclusive member perks
+- Credit information
+- Call-to-action buttons
+- Professional imagery
 
-## Performance Features
+### Store Locations
+- 3 outlet locations (Fort Myers, Miller Square, Airport)
+- Store hours and contact information
+- Directions buttons
+- Location-specific images
 
-- Optimized images with appropriate sizing
-- Efficient CSS Grid and Flexbox layouts
-- Minimal JavaScript for essential interactions
-- Responsive images with proper aspect ratios
-- Smooth animations and transitions
+## 🔧 Customization
 
-## Accessibility
+The project is designed to be easily customizable:
 
-- Semantic HTML structure
-- Proper alt text for images
-- Keyboard navigation support
-- High contrast color scheme
-- Responsive text sizing
+- **Colors**: Update CSS variables in `styles.css`
+- **Content**: Modify text in `index.html`
+- **Images**: Replace images in the `images/` folder
+- **Layout**: Adjust breakpoints and grid systems in `styles.css`
 
-## License
+## 📄 License
 
-This project is created based on the EDF Outlet Figma design specifications. All rights reserved by El Dorado Furniture.
+This project is created for EDF Outlet. All rights reserved.
 
-## Contact
+## 👥 Contributing
 
-For questions about this implementation, please refer to the original Figma design specifications.
+This is a client project for EDF Outlet. For questions or modifications, please contact ANGProductions.
+
+## 📞 Contact
+
+- **Company**: ANGProductions
+- **Email**: info@angproductions.com
+- **GitHub**: [@ANGProductions](https://github.com/ANGProductions)
+
+---
+
+**Built with ❤️ by ANGProductions for EDF Outlet**
