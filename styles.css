@@ -1,0 +1,681 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #395672;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section (now at top) */
+.hero {
+    background-color: #FFFFFF;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.edf-logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-image {
+    max-width: 283px;
+    height: auto;
+}
+
+.hero-text h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.209;
+    color: #395672;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.193;
+    color: #395672;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-main-image {
+    width: 100%;
+    height: auto;
+    max-width: 466px;
+    border-radius: 8px;
+}
+
+.store-locator-button {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.btn-store-locator {
+    background-color: #7299BB;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.193;
+    padding: 10px 20px;
+    min-width: 118px;
+}
+
+/* Product Categories Section */
+.product-categories {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.category-item {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.category-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.price {
+    display: block;
+    font-size: 14px;
+    color: #395672;
+    margin-bottom: 10px;
+}
+
+.category-info h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.221;
+    color: #395672;
+}
+
+/* BLUCard Section */
+.blucard-section {
+    background: linear-gradient(135deg, #F2F4F9 0%, #E8ECF4 100%);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.blucard-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.blucard-content {
+    z-index: 2;
+}
+
+.blucard-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blucard-logo img {
+    max-width: 355px;
+    height: auto;
+}
+
+.blucard-text h1 {
+    font-family: 'Gotham HTF', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.077;
+    color: #504E4D;
+    margin-bottom: 20px;
+}
+
+.credit-note {
+    font-family: 'Gotham HTF', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.077;
+    color: #707070;
+    margin-bottom: 40px;
+}
+
+.blucard-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.15;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #7299BB;
+    color: #FCFCFC;
+    min-width: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #5a7a9a;
+}
+
+.btn-secondary {
+    background-color: #FBFBFB;
+    color: #395572;
+    border: 1px solid #40556F;
+    min-width: 174px;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+.blucard-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.blucard-image {
+    width: 355px;
+    height: 58px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.blucard-hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.blucard-hero-image .hero-main-image {
+    width: 100%;
+    height: auto;
+    max-width: 843px;
+    border-radius: 8px;
+}
+
+/* Outlet Locations Section */
+.outlet-locations {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    border-top: 1px solid #C7C7C7;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.location-card {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.location-image {
+    width: 100%;
+    height: 266px;
+    overflow: hidden;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-info {
+    padding: 20px;
+}
+
+.location-info h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.221;
+    color: #395672;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    font-size: 14px;
+    line-height: 1.193;
+    color: #395672;
+    margin-bottom: 5px;
+}
+
+.hours {
+    margin: 15px 0;
+}
+
+.hours h4 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.221;
+    color: #395672;
+    margin-bottom: 5px;
+}
+
+.phone {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.221;
+    color: #395672;
+    margin-bottom: 20px;
+}
+
+.btn-directions {
+    background-color: #7299BB;
+    color: #FCFCFC;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 24px;
+    min-width: 117px;
+}
+
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    padding: 60px 0;
+    border-top: 1px solid #C7C7C7;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-link {
+    color: #222222;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #395672;
+}
+
+.footer-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-text p {
+    font-size: 12px;
+    line-height: 1.15;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .blucard-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .locations-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .location-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .location-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+    
+    .hero-container {
+        text-align: left;
+    }
+    
+    .hero-text h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .blucard-section {
+        padding: 40px 0;
+    }
+    
+    .blucard-container {
+        text-align: left;
+    }
+    
+    .blucard-text h1 {
+        font-size: 32px;
+    }
+    
+    .blucard-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn {
+        width: auto;
+        max-width: 300px;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .locations-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .location-card {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .location-image {
+        height: 180px;
+    }
+    
+    .social-icons {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .social-icons img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 513px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero-container {
+        text-align: left;
+    }
+    
+    .hero-text h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .hero-text p {
+        font-size: 14px;
+    }
+    
+    .blucard-section {
+        padding: 30px 0;
+    }
+    
+    .blucard-container {
+        text-align: left;
+    }
+    
+    .blucard-text h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    
+    .credit-note {
+        font-size: 12px;
+    }
+    
+    .blucard-buttons {
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .blucard-logo img {
+        max-width: 280px;
+    }
+    
+    .product-categories {
+        padding: 50px 0;
+    }
+    
+    .categories-grid {
+        gap: 25px;
+    }
+    
+    .category-item {
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    }
+    
+    .category-info {
+        padding: 15px;
+    }
+    
+    .category-info h3 {
+        font-size: 20px;
+    }
+    
+    .outlet-locations {
+        padding: 50px 0;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .location-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .location-card {
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    }
+    
+    .location-info {
+        padding: 15px;
+    }
+    
+    .footer {
+        padding: 40px 0;
+    }
+    
+    .social-icons {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .social-icons img {
+        height: 30px;
+    }
+    
+    .footer-links {
+        margin-bottom: 20px;
+    }
+    
+    .footer-link {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .footer-text p {
+        font-size: 11px;
+    }
+    
+    .store-locator-button {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-store-locator {
+        font-size: 14px;
+        padding: 8px 16px;
+        min-width: 100px;
+    }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 375px) {
+    .hero-text h2 {
+        font-size: 20px;
+    }
+    
+    .blucard-text h1 {
+        font-size: 24px;
+    }
+    
+    .blucard-buttons {
+        gap: 10px;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .blucard-logo img {
+        max-width: 250px;
+    }
+    
+    .categories-grid {
+        gap: 20px;
+    }
+    
+    .locations-grid {
+        gap: 20px;
+    }
+    
+    .social-icons {
+        gap: 8px;
+    }
+    
+    .social-icons img {
+        height: 25px;
+    }
+}
