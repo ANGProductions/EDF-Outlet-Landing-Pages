@@ -41,7 +41,7 @@ body {
 }
 
 .edf-logo {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
 }
 
@@ -72,17 +72,15 @@ body {
 }
 
 .hero-main-image {
-    width: 100%;
+    width: 466px;
+    max-width: 100%;
     height: auto;
-    max-width: 466px;
     border-radius: 8px;
 }
 
 .store-locator-button {
-    position: absolute;
-    bottom: 30px;
-    right: 50%;
-    transform: translateX(50%);
+    position: static;
+    margin-top: 20px;
 }
 
 .btn-store-locator {
@@ -149,10 +147,10 @@ body {
 
 /* BLUCard Section */
 .blucard-section {
-    background: linear-gradient(135deg, #F2F4F9 0%, #E8ECF4 100%);
+    background: transparent;
     padding: 60px 0;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .blucard-container {
@@ -162,7 +160,10 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    padding: 0 20px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #F2F4F9 0%, #E8ECF4 100%);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .blucard-content {
@@ -170,7 +171,7 @@ body {
 }
 
 .blucard-logo {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -182,10 +183,14 @@ body {
 .blucard-text h1 {
     font-family: 'Gotham HTF', sans-serif;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.077;
+    font-size: 36px;
+    line-height: 1.1;
     color: #504E4D;
     margin-bottom: 20px;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .credit-note {
@@ -403,6 +408,14 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1023px) {
+    /* Tablet: stack location cards similar to mobile */
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+}
 @media (max-width: 513px) {
     .container {
         padding: 0 15px;
@@ -414,6 +427,8 @@ body {
     
     .hero-container {
         text-align: left;
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
     
     .hero-text h2 {
@@ -427,10 +442,14 @@ body {
     
     .blucard-section {
         padding: 30px 0;
+        background: linear-gradient(135deg, #F2F4F9 0%, #E8ECF4 100%);
     }
     
     .blucard-container {
         text-align: left;
+        background: transparent;
+        padding: 20px 15px;
+        border-radius: 0;
     }
     
     .blucard-text h1 {
