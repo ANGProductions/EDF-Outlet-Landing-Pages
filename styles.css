@@ -54,7 +54,7 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
     font-size: 36px;
-    line-height: 1.209;
+    line-height: 1.2;
     color: #395672;
     margin-bottom: 30px;
 }
@@ -140,7 +140,7 @@ body {
 .category-info h3 {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.221;
     color: #395672;
 }
@@ -257,14 +257,16 @@ body {
 }
 
 .blucard-hero-image {
-    position: relative;
+    position: absolute;
     z-index: 1;
+    right: 20px;
+    bottom: 0;
 }
 
 .blucard-hero-image .hero-main-image {
     width: 100%;
     height: auto;
-    max-width: 843px;
+    max-width: 600px;
     border-radius: 8px;
 }
 
@@ -352,6 +354,7 @@ body {
     font-size: 14px;
     padding: 12px 24px;
     min-width: 117px;
+    margin-top: 10px;
 }
 
 /* Footer */
@@ -362,12 +365,12 @@ body {
 }
 
 .footer-content {
-    text-align: center;
+    text-align: left;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     margin-bottom: 40px;
     flex-wrap: wrap;
@@ -397,7 +400,7 @@ body {
 
 .footer-text {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .footer-text p {
@@ -409,11 +412,24 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1023px) {
+}
+
+/* Begin stacking hero at 801px width */
+@media (max-width: 801px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
     /* Tablet: stack location cards similar to mobile */
     .locations-grid {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 0 15px;
+    }
+    /* Keep hero two-column until 801px, then stack */
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 513px) {
@@ -428,7 +444,7 @@ body {
     .hero-container {
         text-align: left;
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
     }
     
     .hero-text h2 {
@@ -450,6 +466,13 @@ body {
         background: transparent;
         padding: 20px 15px;
         border-radius: 0;
+        position: static;
+    }
+    .blucard-hero-image {
+        position: static;
+        margin-top: 20px;
+        right: auto;
+        bottom: auto;
     }
     
     .blucard-text h1 {
