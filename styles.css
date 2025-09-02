@@ -412,26 +412,63 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1023px) {
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .blucard-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .blucard-hero-image {
+        position: static;
+        right: auto;
+        bottom: auto;
+        text-align: center;
+    }
 }
 
-/* Begin stacking hero at 801px width */
-@media (max-width: 801px) {
+@media (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
         gap: 30px;
+        text-align: left;
     }
-}
-    /* Tablet: stack location cards similar to mobile */
+    
+    .hero-image {
+        order: 2;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 1;
+    }
+    
+    .store-locator-button {
+        order: 3;
+        text-align: left;
+    }
+    
+    .hero-main-image {
+        width: 400px;
+        max-width: 90%;
+    }
+    
     .locations-grid {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 0 15px;
     }
-    /* Keep hero two-column until 801px, then stack */
-    .hero-container {
-        grid-template-columns: 1fr 1fr;
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 }
+
 @media (max-width: 513px) {
     .container {
         padding: 0 15px;
@@ -445,6 +482,27 @@ body {
         text-align: left;
         grid-template-columns: 1fr;
         gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        order: 1;
+    }
+    
+    .hero-image {
+        order: 2;
+        text-align: center;
+    }
+    
+    .store-locator-button {
+        order: 3;
+        text-align: left;
+    }
+    
+    .hero-main-image {
+        width: 350px;
+        max-width: 85%;
     }
     
     .hero-text h2 {
@@ -504,6 +562,7 @@ body {
     
     .categories-grid {
         gap: 25px;
+        grid-template-columns: 1fr;
     }
     
     .category-item {
