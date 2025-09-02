@@ -24,7 +24,19 @@ body {
     padding: 80px 0;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid #E5E5E5;
+}
+
+/* Dotted Border Element */
+.div-border {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 20px;
+    background-image: radial-gradient(circle, #C7C7C7 2px, transparent 2px);
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+    background-position: center;
 }
 
 .hero-container {
@@ -152,7 +164,6 @@ body {
     padding: 60px 0;
     position: relative;
     overflow: visible;
-    border-bottom: 1px solid #E5E5E5;
 }
 
 .blucard-container {
