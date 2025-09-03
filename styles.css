@@ -20,9 +20,8 @@ body {
 
 /* Dotted Border Element */
 .div-border {
-    width: 100%;
-  background: radial-gradient(circle, #ccc 1px, transparent 1px);
-  background-size: 10px 10px;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 0 20px;
     height: 20px;
     background-image: radial-gradient(circle, #C7C7C7 2px, transparent 2px);
@@ -173,7 +172,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px 40px;
     background: linear-gradient(135deg, #F2F4F9 0%, #E8ECF4 100%);
     border-radius: 12px;
     overflow: hidden;
@@ -271,17 +270,20 @@ body {
 }
 
 .blucard-hero-image {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .blucard-hero-image .hero-main-image {
     width: 100%;
-    height: auto;
-    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom right;
     border-radius: 8px;
 }
 
@@ -426,6 +428,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1023px) {
+    .div-border {
+        background-size: 8px 8px;
+        background-image: radial-gradient(circle, #C7C7C7 0.8px, transparent 0.8px);
+    }
+    
     .locations-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -436,11 +443,22 @@ body {
         gap: 40px;
         text-align: center;
         position: relative;
+        padding: 20px 30px;
     }
     
     .blucard-hero-image {
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .blucard-hero-image .hero-main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom right;
     }
     
     .categories-grid {
@@ -450,6 +468,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .div-border {
+        background-size: 6px 6px;
+        background-image: radial-gradient(circle, #C7C7C7 0.6px, transparent 0.6px);
+        padding: 0 15px;
+    }
+    
     .hero-container {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -485,9 +509,31 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+    
+    .blucard-hero-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .blucard-hero-image .hero-main-image {
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 513px) {
+    .div-border {
+        background-size: 5px 5px;
+        background-image: radial-gradient(circle, #C7C7C7 0.5px, transparent 0.5px);
+        padding: 0 15px;
+    }
+    
     .container {
         padding: 0 15px;
     }
@@ -540,20 +586,15 @@ body {
     .blucard-container {
         text-align: left;
         background: transparent;
-        padding: 20px 15px;
+        padding: 15px 20px;
         border-radius: 0;
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
-    .blucard-hero-image {
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-    
     .blucard-hero-image .hero-main-image {
-        max-width: 300px;
+        width: 250px;
+        max-width: 100%;
     }
     
     .blucard-text h1 {
