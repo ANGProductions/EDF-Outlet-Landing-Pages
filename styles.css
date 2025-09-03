@@ -21,8 +21,8 @@ body {
 /* Dotted Border Element */
 .div-border {
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
+  background: radial-gradient(circle, #ccc 1px, transparent 1px);
+  background-size: 10px 10px;
     padding: 0 20px;
     height: 20px;
     background-image: radial-gradient(circle, #C7C7C7 2px, transparent 2px);
