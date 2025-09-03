@@ -445,12 +445,16 @@ body {
         padding: 20px 30px;
     }
     
+    .blucard-text h1 {
+        font-size: 32px;
+    }
+    
     .blucard-hero-image {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 500px;
-        height: 400px;
+        width: 600px;
+        height: 450px;
     }
     
     .blucard-hero-image .hero-main-image {
@@ -509,11 +513,15 @@ body {
         gap: 30px;
     }
     
+    .blucard-text h1 {
+        font-size: 28px;
+    }
+    
     .blucard-hero-image {
         position: static;
-        width: calc(100% + 80px);
+        width: calc(100% + 100px);
         height: auto;
-        margin: 20px -40px 0 -40px;
+        margin: 20px -50px 0 -50px;
         display: flex;
         justify-content: center;
     }
@@ -597,7 +605,7 @@ body {
     }
     
     .blucard-text h1 {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1.2;
     }
     
