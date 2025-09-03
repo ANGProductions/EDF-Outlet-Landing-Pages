@@ -25,7 +25,7 @@ body {
     padding: 0 20px;
     height: 20px;
     background-image: radial-gradient(circle, #C7C7C7 1px, transparent 1px);
-    background-size: 12px 12px;
+    background-size: 14px 14px;
     background-repeat: repeat-x;
     background-position: center;
 }
@@ -274,8 +274,8 @@ body {
     bottom: 0;
     right: 0;
     z-index: 1;
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
 }
 
 .blucard-hero-image .hero-main-image {
@@ -428,7 +428,7 @@ body {
 /* Responsive Design */
 @media (max-width: 1023px) {
     .div-border {
-        background-size: 10px 10px;
+        background-size: 12px 12px;
         background-image: radial-gradient(circle, #C7C7C7 0.8px, transparent 0.8px);
     }
     
@@ -440,7 +440,7 @@ body {
     .blucard-container {
         grid-template-columns: 1fr;
         gap: 40px;
-        text-align: center;
+        text-align: left;
         position: relative;
         padding: 20px 30px;
     }
@@ -449,8 +449,8 @@ body {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
     }
     
     .blucard-hero-image .hero-main-image {
@@ -468,7 +468,7 @@ body {
 
 @media (max-width: 768px) {
     .div-border {
-        background-size: 8px 8px;
+        background-size: 10px 10px;
         background-image: radial-gradient(circle, #C7C7C7 0.6px, transparent 0.6px);
         padding: 0 15px;
     }
@@ -511,16 +511,15 @@ body {
     
     .blucard-hero-image {
         position: static;
-        width: 100%;
+        width: calc(100% + 80px);
         height: auto;
-        margin-top: 20px;
+        margin: 20px -40px 0 -40px;
         display: flex;
         justify-content: center;
     }
     
     .blucard-hero-image .hero-main-image {
         width: 100%;
-        max-width: 300px;
         height: auto;
         object-fit: contain;
         border-radius: 8px;
@@ -529,7 +528,7 @@ body {
 
 @media (max-width: 513px) {
     .div-border {
-        background-size: 6px 6px;
+        background-size: 8px 8px;
         background-image: radial-gradient(circle, #C7C7C7 0.5px, transparent 0.5px);
         padding: 0 15px;
     }
@@ -594,8 +593,7 @@ body {
     
     .blucard-hero-image .hero-main-image {
         width: 100%;
-        max-width: 250px;
-        max-width: 100%;
+        height: auto;
     }
     
     .blucard-text h1 {
